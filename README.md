@@ -5,8 +5,7 @@ Este projeto foi criado com foco em **desempenho**, **estética** e **usabilidad
 
 ---
 
-🌐 Deploy
-Este portfólio está hospedado com deploy contínuo em:
+## 🌐 Link do Projeto
 
 🔗 https://curriculo-front-end-one.vercel.app
 
