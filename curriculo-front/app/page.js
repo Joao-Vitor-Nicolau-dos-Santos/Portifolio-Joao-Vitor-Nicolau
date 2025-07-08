@@ -22,7 +22,8 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.2}>
               <h2 className="text-3xl font-regular m-4">
-                Olá, sou um Desenvolvedor <span className="text-orange-400 font-grotesk">Front-End</span>
+                Olá, sou um Desenvolvedor{" "}
+                <span className="text-orange-400 font-grotesk">Front-End</span>
               </h2>
             </Reveal>
           </div>
@@ -39,7 +40,7 @@ export default function Home() {
               </p>
             </Reveal>
 
-            <div className="flex flex-col md:flex-row items-center justify-around gap-12 w-full mx-auto">
+            <div className="flex flex-col md:flex-row items-center  gap-12 w-full mx-auto">
               <Reveal delay={0.4}>
                 <div className="md:w-1/2 text-center">
                   <h3 className="text-2xl font-bold">
@@ -90,9 +91,9 @@ export default function Home() {
           >
             <Reveal delay={0.6}>
               <ProjectCard
-                titulo="Dashboard de Clima"
-                descricao="Aplicação para visualização de dados climáticos em tempo real usando APIs públicas."
-                link="https://github.com/Joao-Vitor-Nicolau-dos-Santos/Real-time-air-monitoring-system"
+                titulo="LandingPage - Pizzaria"
+                descricao="Uma landing page para uma pizzaria, com cardápio interativo."
+                link="https://github.com/Joao-Vitor-Nicolau-dos-Santos/PizzariaPortifolio.git"
               />
             </Reveal>
 
@@ -125,17 +126,29 @@ export default function Home() {
         {/* Footer */}
         <footer className="border-t border-gray-800 mt-16 py-6 text-center text-gray-400 text-sm">
           <p>
-            Feito com ❤️ por{" "}
+            Feito com ❤️ por João Vitor Nicolau dos Santos
+            <br />
             <a
               href="https://github.com/Joao-Vitor-Nicolau-dos-Santos"
               className="text-orange-400 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              João Vitor Nicolau
+              GitHub
+            </a>
+            <br />
+            <a
+              href="https://www.linkedin.com/in/joão-vitor-nicolau-dos-santos/"
+              className="text-orange-400 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
             </a>
           </p>
-          <p className="mt-2">&copy; {new Date().getFullYear()} Todos os direitos reservados.</p>
+          <p className="mt-2">
+            &copy; {new Date().getFullYear()} Todos os direitos reservados.
+          </p>
         </footer>
       </div>
     </Layout>
