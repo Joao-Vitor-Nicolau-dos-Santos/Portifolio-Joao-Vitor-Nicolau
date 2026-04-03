@@ -7,7 +7,7 @@ Este projeto foi criado com foco em **desempenho**, **estética** e **usabilidad
 
 ## 🌐 Link do Projeto
 
-🔗 https://curriculo-front-end-one.vercel.app
+🔗 https://portifolio-jvn.vercel.app/
 
 ---
 
