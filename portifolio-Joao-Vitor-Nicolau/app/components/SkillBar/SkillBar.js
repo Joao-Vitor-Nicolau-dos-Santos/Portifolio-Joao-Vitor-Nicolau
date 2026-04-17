@@ -11,7 +11,7 @@ export default function SkillBar({ nome, proporcao = "0%" }) {
       
       <div className="h-2 w-full rounded-full bg-slate-800 overflow-hidden">
         <motion.div
-          className="h-full bg-gradient-to-r from-blue-600 to-orange-500 shadow-[0_0_15px_rgba(249,115,22,0.3)] rounded-full"
+          className="h-full bg-gradient-to-r from-pink-400 to-orange-500 shadow-[0_0_15px_rgba(249,115,22,0.3)] rounded-full"
           initial={{ width: 0 }}
           whileInView={{ width: proporcao }}
           transition={{ duration: 1.2, ease: "circOut" }}

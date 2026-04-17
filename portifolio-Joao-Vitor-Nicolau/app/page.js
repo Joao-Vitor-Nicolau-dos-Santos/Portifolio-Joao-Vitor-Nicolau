@@ -6,9 +6,33 @@ import ChangingText from "./components/ChangindText/ChangingText";
 import Layout from "./components/layout";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 import SkillsSection from "./components/SkillBar/SkillsSection";
+import TimelineItem from "./components/TimelineItem/VerticalTimeline";
 import Reveal from "./components/Reveal/Reveal";
 
 export default function Home() {
+  const timelineEvents = [
+    {
+      title: 'Técnico em Eletrônica',
+      subtitle: '2021 - 2023',
+      description: 'Descrição do primeiro evento da linha do tempo.',
+    },
+    {
+      title: 'Fatec FRANCA | Dr. Thomaz Novelino',
+      subtitle: '01/2024 - 11/2026',
+      description: 'Descrição do primeiro evento da linha do tempo.',
+    },
+    {
+      title: 'SoftUp ERP',
+      subtitle: '(21/03/2024) - (03/06/2024)',
+      description: 'Atendimento e suporte ao usuário, correção de parte tributaria para clientes, apoio no setor de implementação. ',
+    },
+    {
+      title: 'Usina de Laticinios Jussara',
+      subtitle: '(04/11/2024) - Atual',
+      description: 'Manutenção no banco de dados, lançamento de atualização de sistema, suporte ao usuário.',
+    },
+  ];
+
   return (
     <Layout>
       <header className="relative w-full h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
@@ -89,6 +113,17 @@ export default function Home() {
           <SkillsSection />
         </section>
 
+        <section className="max-w-4xl mx-auto py-20">
+          <Reveal>
+            <h3 className="text-3xl font-bold mb-16 border-l-4 border-orange-400 pl-4 uppercase tracking-tighter">
+              Trajetória <span className="text-orange-400">&</span> Experiência
+            </h3>
+          </Reveal>
+          <Reveal>
+            <TimelineItem events={timelineEvents} />
+          </Reveal>
+        </section>
+
         <section>
           <Reveal>
             <h3 className="text-3xl font-bold mb-12 border-l-4 border-orange-400 pl-4 uppercase tracking-tighter">
@@ -116,6 +151,7 @@ export default function Home() {
             {/* <ProjectCard titulo="Memo Notes" descricao="Uma aplicação para criar anotações rápidas e organizadas." link="..." /> */}
             {/* <ProjectCard titulo="Spotify Clone" descricao="Um clone do Spotify, com funcionalidades de reprodução de músicas." link="..." /> */}
           </motion.div>
+
         </section>
       </main>
 

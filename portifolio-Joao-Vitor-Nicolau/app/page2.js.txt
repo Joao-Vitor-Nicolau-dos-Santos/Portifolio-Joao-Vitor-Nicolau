@@ -1,0 +1,36 @@
+// ...
+import TimelineItem from "./components/TimelineItem/VerticalTimeline";
+import Layout from "./components/layout";
+import Reveal from "./components/Reveal/Reveal";
+// ...
+
+export default function Home() {
+  const timelineEvents = [
+    {
+      title: 'Estágio em Desenvolvimento Front-End',
+      subtitle: 'Empresa X - 2024',
+      description: 'Desenvolvimento de interfaces com React e Next.js.',
+    },
+    // ... outros eventos
+  ];
+
+  return (
+    <Layout>
+      {/* ... outras seções ... */}
+
+      <section className="max-w-4xl mx-auto py-20">
+        <Reveal>
+          <h3 className="text-3xl font-bold mb-16 border-l-4 border-orange-400 pl-4 uppercase tracking-tighter">
+            Trajetória <span className="text-orange-400">&</span> Experiência
+          </h3>
+        </Reveal>
+        <TimelineItem events={timelineEvents} /> {/* Esta linha chama o componente */}
+                <TimelineItem events={timelineEvents} /> {/* Esta linha chama o componente */}
+                        <TimelineItem events={timelineEvents} /> {/* Esta linha chama o componente */}
+                        
+      </section>
+
+      {/* ... outras seções ... */}
+    </Layout>
+  );
+}
