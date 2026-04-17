@@ -12,14 +12,14 @@ import Reveal from "./components/Reveal/Reveal";
 export default function Home() {
   const timelineEvents = [
     {
-      title: 'Técnico em Eletrônica',
+      title: 'ETEC Dr. Júlio Cardoso',
       subtitle: '2021 - 2023',
-      description: 'Descrição do primeiro evento da linha do tempo.',
+      description: 'Eletrônica.',
     },
     {
       title: 'Fatec FRANCA | Dr. Thomaz Novelino',
       subtitle: '01/2024 - 11/2026',
-      description: 'Descrição do primeiro evento da linha do tempo.',
+      description: 'Desenvolvimento de Software Multi - Plataforma.',
     },
     {
       title: 'SoftUp ERP',
